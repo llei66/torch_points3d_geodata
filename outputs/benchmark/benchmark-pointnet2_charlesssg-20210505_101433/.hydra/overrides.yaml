@@ -1,0 +1,4 @@
+- task=segmentation
+- model_type=pointnet2
+- dataset=geodata
+- model_name=pointnet2_charlesssg

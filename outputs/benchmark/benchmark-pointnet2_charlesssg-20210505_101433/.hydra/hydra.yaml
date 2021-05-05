@@ -1,0 +1,122 @@
+hydra:
+  help:
+    app_name: ${hydra.job.name}
+    footer: 'Powered by Hydra (https://hydra.cc)
+
+      Use --hydra-help to view Hydra specific help
+
+      '
+    header: '${hydra.help.app_name} is powered by Hydra.
+
+      '
+    template: '${hydra.help.header}
+
+      == Configuration groups ==
+
+      Compose your configuration from those groups (group=option)
+
+
+      $APP_CONFIG_GROUPS
+
+
+      == Config ==
+
+      Override anything in the config (foo.bar=value)
+
+
+      $CONFIG
+
+
+      ${hydra.help.footer}
+
+      '
+  hydra_help:
+    template: 'Hydra (${hydra.runtime.version})
+
+      See https://hydra.cc for more info.
+
+
+      == Flags ==
+
+      $FLAGS_HELP
+
+
+      == Configuration groups ==
+
+      Compose your configuration from those groups (For example, append hydra/job_logging=disabled
+      to command line)
+
+
+      $HYDRA_CONFIG_GROUPS
+
+
+      Use ''--cfg hydra'' to Show the Hydra config.'
+  hydra_logging:
+    disable_existing_loggers: false
+    formatters:
+      simple:
+        format: '[%(asctime)s][HYDRA] %(message)s'
+    handlers:
+      console:
+        class: logging.StreamHandler
+        formatter: simple
+        stream: ext://sys.stdout
+    loggers:
+      logging_example:
+        level: DEBUG
+    root:
+      handlers:
+      - console
+      level: INFO
+    version: 1
+  job:
+    config:
+      override_dirname:
+        exclude_keys: []
+        item_sep: ','
+        kv_sep: '='
+    config_file: config.yaml
+    id: ???
+    name: train
+    num: ???
+    override_dirname: dataset=geodata,model_name=pointnet2_charlesssg,model_type=pointnet2,task=segmentation
+  job_logging:
+    disable_existing_loggers: false
+    formatters:
+      simple:
+        format: '%(message)s'
+    handlers:
+      debug_console_handler:
+        class: logging.StreamHandler
+        formatter: simple
+        level: DEBUG
+        stream: ext://sys.stdout
+      file_handler:
+        class: logging.FileHandler
+        filename: train.log
+        formatter: simple
+        level: DEBUG
+    root:
+      handlers:
+      - debug_console_handler
+      - file_handler
+    version: 1
+  launcher:
+    class: hydra._internal.core_plugins.basic_launcher.BasicLauncher
+  output_subdir: .hydra
+  overrides:
+    hydra: []
+    task:
+    - task=segmentation
+    - model_type=pointnet2
+    - dataset=geodata
+    - model_name=pointnet2_charlesssg
+  run:
+    dir: ./outputs/${job_name}/${job_name}-${model_name}-${now:%Y%m%d_%H%M%S}
+  runtime:
+    cwd: /home/dmn774/Deepcrop/code/torch_points3d_geodata
+    version: 0.11.3
+  sweep: ???
+  sweeper:
+    class: hydra._internal.core_plugins.basic_sweeper.BasicSweeper
+  verbose: false

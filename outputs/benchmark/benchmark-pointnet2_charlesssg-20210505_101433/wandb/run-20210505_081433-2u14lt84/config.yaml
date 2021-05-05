@@ -1,0 +1,19 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.8.36
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.7.10
+commit:
+  desc: null
+  value: n/a
+model_name:
+  desc: null
+  value: pointnet2_charlesssg
+run_path:
+  desc: null
+  value: /home/dmn774/Deepcrop/code/torch_points3d_geodata/outputs/benchmark/benchmark-pointnet2_charlesssg-20210505_101433

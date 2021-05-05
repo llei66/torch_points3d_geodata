@@ -1,0 +1,37 @@
+/home/dmn774/Deepcrop/data/geodata/test_whole_one/train/PUNKTSKY_1km_6200_703_whole_class.txt
+label weights: [1.2546144e-08 7.8053046e-07 1.1172036e-06 2.0326864e-07 2.0717316e-06
+ 6.4201333e-05]
+class counts : [1.3284295e+07 2.1353000e+05 1.4918200e+05 8.1993300e+05 8.0448000e+04
+ 2.5960000e+03]
+class distribution : [9.1301095e-01 1.4675617e-02 1.0253070e-02 5.6352846e-02 5.5290782e-03
+ 1.7841945e-04]
+Total of 11798940 samples in train set.
+/home/dmn774/Deepcrop/data/geodata/test_whole_one/validate/PUNKTSKY_1km_6200_704_whole_class.txt
+label weights: [1.0851360e-08 2.3303830e-06 7.0518081e-07 1.1967290e-07 2.2163415e-06
+ 1.2276567e-05]
+class counts : [1.5359058e+07 7.1519000e+04 2.3634600e+05 1.3926850e+06 7.5199000e+04
+ 1.3576000e+04]
+class distribution : [8.9565629e-01 4.1705971e-03 1.3782406e-02 8.1213772e-02 4.3851947e-03
+ 7.9167809e-04]
+Total of 1600 samples in validate set.
+/home/dmn774/Deepcrop/data/geodata/test_whole_one/test/PUNKTSKY_1km_6210_513_whole_class.txt
+label weights: [7.7173830e-08 1.0588419e-06 6.6855648e-07 2.3860800e-08]
+class counts : [ 3239440.   236107.   373940. 10477436.]
+class distribution : [0.22610857 0.01647995 0.02610051 0.73131096]
+Total of 1600 samples in test set.
+Traceback (most recent call last):
+  File "train.py", line 21, in <module>
+    main()
+  File "/home/dmn774/conda/miniconda3/envs/py37torch3dPip/lib/python3.7/site-packages/hydra/main.py", line 24, in decorated_main
+    strict=strict,
+  File "/home/dmn774/conda/miniconda3/envs/py37torch3dPip/lib/python3.7/site-packages/hydra/_internal/utils.py", line 174, in run_hydra
+    overrides=args.overrides,
+  File "/home/dmn774/conda/miniconda3/envs/py37torch3dPip/lib/python3.7/site-packages/hydra/_internal/hydra.py", line 86, in run
+    job_subdir_key=None,
+  File "/home/dmn774/conda/miniconda3/envs/py37torch3dPip/lib/python3.7/site-packages/hydra/plugins/common/utils.py", line 109, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "train.py", line 12, in main
+    trainer = Trainer(cfg)
+  File "/home/dmn774/Deepcrop/code/torch_points3d_geodata/torch_points3d/trainer.py", line 44, in __init__
+    self._initialize_trainer()
+  File "/home/dmn774/Deepcrop/code/torch_points3d_geodata/torch_points3d/trainer.py

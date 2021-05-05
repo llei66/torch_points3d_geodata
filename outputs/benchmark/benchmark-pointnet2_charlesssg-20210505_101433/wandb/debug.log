@@ -1,0 +1,18 @@
+2021-05-05 10:14:38,527 DEBUG   MainThread:16526 [wandb_config.py:_load_defaults():132] no defaults not found in config-defaults.yaml
+2021-05-05 10:14:38,556 DEBUG   MainThread:16526 [meta.py:_setup_code_git():49] probe for git information
+2021-05-05 10:14:38,582 DEBUG   MainThread:16526 [run_manager.py:__init__():546] Initialized sync for default/2u14lt84
+2021-05-05 10:14:38,590 INFO    MainThread:16526 [run_manager.py:wrap_existing_process():1148] wrapping existing process 16400
+2021-05-05 10:14:38,590 WARNING MainThread:16526 [io_wrap.py:register():104] SIGWINCH handler was not None: <Handlers.SIG_DFL: 0>
+2021-05-05 10:14:38,653 INFO    MainThread:16526 [run_manager.py:init_run():927] system metrics and metadata threads started
+2021-05-05 10:14:38,653 INFO    MainThread:16526 [run_manager.py:wrap_existing_process():1165] informing user process we are ready to proceed
+2021-05-05 10:14:38,654 INFO    MainThread:16526 [run_manager.py:_sync_etc():1272] entering loop for messages from user process
+2021-05-05 10:14:38,674 INFO    MainThread:16526 [run_manager.py:_sync_etc():1295] received message from user process: {"save_policy": {"glob": "hydra-config.yaml", "policy": "live"}}
+2021-05-05 10:14:38,677 INFO    MainThread:16526 [run_manager.py:_sync_etc():1295] received message from user process: {"save_policy": {"glob": "overrides.yaml", "policy": "live"}}
+2021-05-05 10:14:38,682 INFO    MainThread:16526 [run_manager.py:_sync_etc():1295] received message from user process: {"save_policy": {"glob": "change.patch", "policy": "live"}}
+2021-05-05 10:14:39,552 INFO    Thread-3  :16526 [run_manager.py:_on_file_modified():691] file/dir modified: /home/dmn774/Deepcrop/code/torch_points3d_geodata/outputs/benchmark/benchmark-pointnet2_charlesssg-20210505_101433/wandb/run-20210505_081433-2u14lt84/config.yaml
+2021-05-05 10:15:37,050 INFO    MainThread:16526 [run_manager.py:_sync_etc():1295] received message from user process: {"exitcode": 1}
+2021-05-05 10:15:37,051 INFO    MainThread:16526 [run_manager.py:_sync_etc():1381] closing log streams and sending exitcode to W&B
+2021-05-05 10:15:37,053 INFO    MainThread:16526 [run_manager.py:shutdown():1071] shutting down system stats and metadata service
+er process: {"exitcode": 1}
+2021-05-05 10:15:37,051 INFO    MainThread:16526 [2u14lt84:run_manager.py:_sync_etc():1381] closing log streams and sending exitcode to W&B
+2021-05-05 10:15:37,053 INFO    MainThread:16526 [2u14lt84:run_manager.py:shutdown():1071] shutting down system stats and metadata service

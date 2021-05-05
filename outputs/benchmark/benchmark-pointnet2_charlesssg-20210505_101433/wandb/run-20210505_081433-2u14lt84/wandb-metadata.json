@@ -1,0 +1,31 @@
+{
+    "root": "/home/dmn774/Deepcrop/code/torch_points3d_geodata",
+    "program": "train.py",
+    "git": {
+        "remote": "git@github.com:llei66/torch_points3d_geodata.git",
+        "commit": null
+    },
+    "email": null,
+    "startedAt": "2021-05-05T08:14:37.039944",
+    "host": "a00637.science.domain",
+    "username": "dmn774",
+    "executable": "/home/dmn774/conda/miniconda3/envs/py37torch3dPip/bin/python",
+    "os": "Linux-3.10.0-1160.11.1.el7.x86_64-x86_64-with-redhat-7.9-Maipo",
+    "python": "3.7.10",
+    "gpu": "TITAN Xp",
+    "gpu_count": 4,
+    "cpu_count": 48,
+    "cuda": "11.0.228",
+    "args": [
+        "task=segmentation",
+        "model_type=pointnet2",
+        "model_name=pointnet2_charlesssg",
+        "dataset=geodata"
+    ],
+    "state": "failed",
+    "jobType": null,
+    "mode": "dryrun",
+    "project": "default",
+    "heartbeatAt": "2021-05-05T08:15:37.728136",
+    "exitcode": 1
+}
