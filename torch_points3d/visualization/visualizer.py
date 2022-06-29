@@ -145,6 +145,8 @@ class Visualizer(object):
     def save_visuals(self, visuals):
         """This function is responsible to save the data into .ply objects
             Parameters:
+            Parameters:
+            Parameters:
                 visuals (Dict[Data(pos=torch.Tensor, ...)]) -- Contains a dictionnary of tensors
             Make sure the saved_keys  within the config maps to the Data attributes.
         """
